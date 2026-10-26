@@ -1,0 +1,21 @@
+Engineering verification environment
+3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]
+Windows-10-10.0.26300-SP0
+
+Unit tests: 21 passed in the project virtual environment.
+Full synthetic notebook check: 16 sections, 50 fixtures, 1 epoch/model, input 64.
+Synthetic check reran after code review with the project kernel; its device was forced to CPU.
+Real training environment package versions follow:
+
+torch==2.7.1+cu128
+torchvision==0.22.1+cu128
+ultralytics==8.4.51
+numpy==2.4.6
+pandas==3.0.1
+opencv-python==4.13.0.92
+scikit-learn==1.8.0
+matplotlib==3.10.8
+onnx==1.23.2
+onnxruntime==1.31.0
+structlog==25.5.0
+PyYAML==6.0.3

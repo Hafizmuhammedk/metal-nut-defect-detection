@@ -1,0 +1,6 @@
+path: C:/metal-nut-defect-detection/data/prepared/e23c17458f1a7951
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: defect

@@ -1,0 +1,86 @@
+{
+  "status": "passed",
+  "automated_tests": {
+    "passed": 21,
+    "scope": "synthetic correctness, notebook compilation and review regressions"
+  },
+  "notebook_schema": "valid nbformat 4.5",
+  "full_synthetic_workflow": {
+    "check": "full_notebook_synthetic_execution",
+    "status": "passed",
+    "sections": 16,
+    "fixture_images": 50,
+    "fixture_test_images": 10,
+    "epochs_per_experiment": 1,
+    "input_size": 64,
+    "initialization": "random YOLOv8n, not pretrained",
+    "elapsed_seconds": 39.41,
+    "scope": "synthetic execution only; real-data experiments are separate"
+  },
+  "real_dataset_inspection": {
+    "images": 335,
+    "good": 242,
+    "defective": 93,
+    "masks": 93,
+    "dimensions": [
+      700,
+      700
+    ],
+    "development": 268,
+    "train": 234,
+    "validation": 34,
+    "test": 67,
+    "image_mask_alignment": "passed",
+    "sha256_download_metadata_matches": 428,
+    "decoded_and_horizontally_reflected_images_cross_split_audit": "passed"
+  },
+  "real_model_experiments": {
+    "status": "complete",
+    "selected_model": "augmented",
+    "onnx": "exported; checker, CPU load and raw-output parity passed",
+    "dataset_images": 335,
+    "test_images": 67,
+    "failure_images": 10,
+    "run_directory": "results\\runs\\20261026T062357976003Z"
+  },
+  "independent_human_review": "not claimed",
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 2050, 4 GiB",
+    "cuda_compute_check": "passed",
+    "torch": "2.7.1+cu128",
+    "cpu": "AMD Ryzen 7 7435HS"
+  },
+  "final_artifact_audit": "passed: 15 executed code cells, no errors, two 50-epoch logs, matching checkpoints, 67 predictions per model, consistent counts, five failure plots, parity and 100-run benchmarks",
+  "controlled_experiment_changed_arguments": [
+    "name",
+    "fliplr",
+    "save_dir"
+  ],
+  "model_sha256": {
+    "pytorch": "1cb82387a25aceb729e2d9d70aced5604c958057440e65593dd0db3d147e84cc",
+    "onnx": "7be697a554ce49c7902a4c74ebf177de03906fbb40cd8b1ee981d529ff140ea7"
+  },
+  "code_review": {
+    "protected_artifacts_unchanged": 13,
+    "split_manifest": "identical for all 335 source images",
+    "yolo_labels": "identical for all 335 images, including empty labels",
+    "saved_prediction_records_rechecked": 134,
+    "training_or_threshold_settings_changed": false,
+    "onnx_preprocessing_and_decoding": "identical to the original implementation on all 67 held-out images",
+    "unit_tests": {
+      "passed": 21
+    },
+    "full_synthetic_workflow": {
+      "check": "full_notebook_synthetic_execution",
+      "status": "passed",
+      "sections": 16,
+      "fixture_images": 50,
+      "fixture_test_images": 10,
+      "epochs_per_experiment": 1,
+      "input_size": 64,
+      "initialization": "random YOLOv8n, not pretrained",
+      "elapsed_seconds": 39.41,
+      "scope": "synthetic execution only; real-data experiments are separate"
+    }
+  }
+}

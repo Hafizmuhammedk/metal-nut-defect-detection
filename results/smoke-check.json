@@ -1,0 +1,12 @@
+{
+  "check": "full_notebook_synthetic_execution",
+  "status": "passed",
+  "sections": 16,
+  "fixture_images": 50,
+  "fixture_test_images": 10,
+  "epochs_per_experiment": 1,
+  "input_size": 64,
+  "initialization": "random YOLOv8n, not pretrained",
+  "elapsed_seconds": 39.41,
+  "scope": "synthetic execution only; real-data experiments are separate"
+}
