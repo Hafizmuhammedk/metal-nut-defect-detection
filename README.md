@@ -75,8 +75,8 @@ environment; it is not a claim of fresh-environment training verification.
 Download **metal_nut** from the original
 [MVTec AD dataset page](https://www.mvtec.com/research-teaching/datasets/mvtec-ad).
 Follow [data/README.md](data/README.md) and extract into `data/metal_nut/`, or
-change `DATASET_DIR` in notebook section 3. There is no automatic redistribution
-or download of the data. MVTec AD uses **CC BY-NC-SA 4.0**, including a restriction
+change `DATASET_DIR` in notebook section 3. The data is not redistributed; an optional local downloader is provided
+in `tools/download_metal_nut.py` (see `data/README.md`). MVTec AD uses **CC BY-NC-SA 4.0**, including a restriction
 on commercial use. Check the dataset's terms before using it for a customer.
 Ultralytics also has its own [software licensing terms](https://www.ultralytics.com/license).
 

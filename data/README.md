@@ -46,3 +46,24 @@ used for training, validation, calibration, or model selection.
 MVTec AD is licensed **CC BY-NC-SA 4.0**, including a noncommercial restriction.
 See the source page and included dataset license for attribution and terms.
 Keep all raw images, masks, and prepared copies out of version control.
+
+## Optional automatic download
+
+For Windows, double-click `tools/download_metal_nut.bat` from the
+repository. Or run the following commands from the project root:
+
+```powershell
+python -m pip install huggingface_hub Pillow
+python tools/download_metal_nut.py
+```
+
+The downloader retrieves only `metal_nut` from the public
+[MSherbinii MVTec mirror](https://huggingface.co/datasets/MSherbinii/mvtec-ad-metal-nut),
+at the exact revision recorded above, saving files into
+`data/metal_nut/`. It checks that source images are readable and that each
+defect image has a matching same-size mask. It prints the dataset counts.
+Interrupted downloads can be rerun. Internet access is required.
+
+The original MVTec source and its license remain authoritative.
+Do not commit downloaded image/mask files or use them commercially without
+appropriate permission.
